@@ -16,5 +16,6 @@ public class Test1 {
     emp userbean = applicationContext.getBean("emp", emp.class);
     userbean.add();
     System.out.println(userbean);
+    System.out.println("分支1");
 }
 }

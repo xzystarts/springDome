@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    
+    <bean id="list" class="ListDome.bean">
+
+        <property name="list">
+            <list>
+                <value>一号</value>
+                <value>二号</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="001">
+                    <value>map一号</value>
+                </entry>
+                <entry key="002">
+
+                    <value>map二号</value>
+                </entry>
+            </map>
+        </property>
+        <property name="stus">
+            <set>
+                <ref bean="stu1"></ref>
+            <ref bean="stu2"></ref>
+            </set>
+        </property>
+    </bean>
+
+
+    <bean id="stu1" class="ListDome.stu">
+        <property name="SName" value="小1"></property>
+    </bean>
+
+
+    <bean id="stu2" class="ListDome.stu">
+        <property name="SName" value="小2"></property>
+    </bean>
+
+</beans>
+

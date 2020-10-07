@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+    <bean id="emp" class="class01.emp">
+        <property name="sex" value="男"></property>
+        <property name="name" value="TOM"></property>
+       <!--内部bean-->
+        <property name="dept1">
+            <bean id="dept" class="class01.dept">
+                <property name="DName" value="部门123"></property>
+            </bean>
+
+
+        </property>
+    </bean>
+
+</beans>

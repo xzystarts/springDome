@@ -17,5 +17,6 @@ public class Test1 {
     userbean.add();
     System.out.println(userbean);
     System.out.println("主干操作");
+    System.out.println("分支1");
 }
 }

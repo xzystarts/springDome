@@ -18,5 +18,6 @@ public class Test1 {
     System.out.println(userbean);
     System.out.println("主干操作");
     System.out.println("分支1");
+    System.out.println("线下操作");
 }
 }
